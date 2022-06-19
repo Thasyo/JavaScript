@@ -1,0 +1,34 @@
+JAVASCRIPT - CURSO EM VÍDEO
+
+- MÓDULO A: CONHECENDO JAVASCRIPT
+
+	- AULA 01: O QUE O JAVASCRIPT É CAPAZ DE FAZER?
+
+		- Cliente: Computador, celular, tablet, etc..
+		- conteudo: é aqulo que você na tela do seu aparelho;
+		- Servidor: onde estão armazenados todos os arquivos e conteudos;
+		
+		- JavaScript pode atuar tanto no cliente como no servidor, mas na sua essencia, ela é uma linguagem de cliente (front-end);
+
+	- Aula 02: Como chegamos até aqui?
+		
+		- JavaScript foi criado por Brendan Eich em 1995, a pedido da empresa NETSCAPE.
+		- Ecmascript basicamente é a versão padronizada do JavaScript; tecnicamente são a mesma coisa, mas o EcmaScript tem atualizações frequentes.
+
+		- DIFERENÇAS ENTRE JAVA E JAVASCRIPT?	
+			
+			- São totalmente diferentes; uma das poucas similaridades é que elas são baseadas na Linguagem C e foram criadas na mesma época.
+
+	- Aula 03: Dando os primeiros passos
+
+		- MANUAIS E REFERENCIAS: 
+
+			1- guia de referencia da própria Mozilla;
+		
+				- LINK:  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+
+	- Aula 04: Criando o primeiro script
+
+		- window.alert('Minha primeira Mensagem') -> Colaca um alerta na página; so tem uma opção de OK.
+		- window.confirm('Está gostando de JavaScript?') -> Coloca um opção na pagina pra confirmar ou cancelar.
+        - window.prompt('Qual é o seu nome?') -> Interage com o usuário pedindo pra ele escrever algo.
