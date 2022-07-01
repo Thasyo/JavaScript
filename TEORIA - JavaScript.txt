@@ -29,6 +29,194 @@ JAVASCRIPT - CURSO EM VÍDEO
 
 	- Aula 04: Criando o primeiro script
 
-		- window.alert('Minha primeira Mensagem') -> Colaca um alerta na página; so tem uma opção de OK.
+		- window.alert('Minha primeira Mensagem') -> Coloca um alerta na página; so tem uma opção de OK.
 		- window.confirm('Está gostando de JavaScript?') -> Coloca um opção na pagina pra confirmar ou cancelar.
-        - window.prompt('Qual é o seu nome?') -> Interage com o usuário pedindo pra ele escrever algo.
+        		- window.prompt('Qual é o seu nome?') -> Interage com o usuário pedindo pra ele escrever algo.
+
+
+
+- MÓDULO B: COMANDOS BÁSICOS DO JAVASCRIPT
+
+	- AULA 01: VARIÁVEIS E TIPOS PRIMITIVOS
+
+		- Comentários: 
+
+			- //: comentário para uma única linha;
+			- /* */: comentário para mais de uma linha;	
+	
+		- Variável: São espaços na memória RAM (geralmente) onde são armazenados os dados;
+
+			- representado por:
+
+				- var;
+				- let; também é usado para armazenar variáveis.
+		
+		- Nós podemos delimitar uma strings por três formas:
+
+			- "String";
+			- 'String';
+			- `String`;
+
+		- Os nomes que damos às variáveis são chamados de IDENTIFICADORES.
+
+			- As regas dos identificadores são as mesmas de C.
+
+		- TIPOS PRIMITIVOS:
+
+			- Number:
+				-Infinity;
+				-NaN;		
+			- String;
+			- Boolean;
+			- Null;
+			- Undefined;
+			- Object;
+				- Array;
+			- Function;
+
+			- typeof : mostra o tipo da variável;
+
+	- AULA 02: TRATAMENTO DE DADOS
+
+		- FORMAS DE DECLARAR UMA VARIÁVEL:
+
+			- 1: VAR <nome_var>
+
+			-2: LET <nome_var>
+
+			-3: CONST <nome_var>
+
+		- O sinal de "+" pode ser para concatenação e também para operação.
+
+		- FORMATANDO STRING PARA NUMBER
+
+			- parseInt()
+			- parseFloat()
+			- Number()
+
+		- FORMATANDO NUMBER PARA STRING
+
+			- String()	
+
+		- FORMATANDO  STRINGS
+
+			- 'eu estou aprendendo s' // não faz interpolação
+			- "eu estou aprendendo " + s // usa concatenação/ junção
+			- `eu estou aprendendo ${s}` // usa template string - forma mais atual
+
+		- MANIPULANDO STRINGS
+			
+			- <nome_var>.length -> mostra o total de caracteres que a string tem.
+			- <nome_var>.toUpperCase() -> coloca tudo em MAIÚSCULO
+			- <nome_var>.toLowerCase() -> coloca tudo em MINÚSCULO
+			
+		- document.write() -> escreve algo na página
+		- document.writeln() -> escreve algo na página e pula uma linha.
+
+		- MANIPULANDO NUMBERS
+
+			- <nome_var>.toFixed(<quantidade_de_casas_decimais>) -> manipula as casas decimais de um numero.
+			- <nome_var>.replace("substitue algo", "por isso") -> substitue algo por outra coisa.
+			- <nome_var>.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}) -> coloca o numero em valor monetário.
+
+
+	- AULA 03: OPERADORES
+	
+		- ARITMÉTICOS;
+
+			+ : Adição;
+			- : Subtração;
+			* : Multiplicação;
+			/ : Divisão (Assume valores decimais);
+			% : Resto da divisão inteira; 					
+			** : Potenciação (quadrado de um número);
+		
+			- PRECEDÊNCIA DO ARITMÉTICOS:
+
+				1- () 
+				2- **
+				3- * ,  / ,  %
+				4- +,  -
+
+
+		- ATRIBUIÇÃO (' = ');
+
+			- SIMPLES: 
+			
+				var  a = 3 => a recebe 3
+				var  b = 5 + a => b recebe 8
+				var  c = (b+2) / 2 => c recebe 5
+				var  d = 10 - a / 2 => 8.5
+
+			- AUTO-ATRIBUIÇÕES:
+
+				var n = 3
+
+				n = n * 2 | n *= 2 => todas as duas formas estão corretas, e significam a mesma coisas, só que uma é a simplificação da outra.
+
+			- INCREMENTO:
+
+				var n = 3
+
+				INCREMENTO: n = n + 1 | n += 1 | n++ =>  todas as três formas estão corretas, e significam a mesma coisa, só que uma é a simplificação da outra.					
+				DECREMENTO: n = n - 1 | n -= 1 | n-- => todas as três formas estão corretas, e significam a mesma coisa, só que uma é a simplificação da outra.
+			
+			- PRÉ-INCREMENTO:
+
+				var n = 3
+				
+				n = n + 1 | n += 1 | ++n
+	
+
+		- RELACIONAIS;
+
+			- Sempre retorna valor BOOLEAN (true or false);
+
+			> : Maior;
+			< : Menor;
+			>= : Maior ou igual;
+			<= : Menor ou igual;
+			== : Igualdade;
+			!= : Diferente;
+
+			- Exemplo: 
+		
+				- 4 > 3 : TRUE
+				- 5 < 1 : FALSE
+			
+			- Aritméticos tem precedência sobre os relacionais e lógicos;
+
+			- IDENTIDADE:
+	
+				- SINAL : '=== '  (TRÊS SINAIS DE IGUAL);
+					
+				- Testa não só os elementos, mas até mesmo os seu tipo;
+					
+					- Exemplo: 
+		
+						- 5 == '5' : TRUE (pois, igualdade não considera tipagem na comparação)
+						- 5 === '5'	 : FALSE (pois, há a comparação de tipagem, e NUMBER é dIferente de STRING)	
+
+
+		- LÓGICOS;
+
+			! : Negação
+			&& : Conjunção (e);
+			|| : Disjunção (ou);
+			
+			- PRECEDÊNCIA DOS LÓGICOS:
+
+				1- ! : NEGAÇÃO
+				2- && : CONJUNÇÃO (e)
+				3- || : DISJUNÇÃO (ou)
+
+
+		- TERNÁRIOS;
+
+			- Sintaxe: "TESTE LÓGICO" ? <retorno para TRUE> : <retorno para FALSE>
+			
+				- Exemplo: 
+
+					- 5 > 7 ? Verdade : Mentira
+
+				
