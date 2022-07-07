@@ -219,4 +219,146 @@ JAVASCRIPT - CURSO EM VÍDEO
 
 					- 5 > 7 ? Verdade : Mentira
 
+- MÓDULO C: ENTENDENDO O DOM
+
+	- AULA 01: INTRODUÇÃO AO DOM
+
+		- DOM (Document Object Model - Modelo de objetos para documentos): Dá acesso aos componentes internos do SITE; somente está presente quando roda JavaScript no navegador;
+	
+		- ÁRVORE DOM:
+
+			1- Window : Tudo do JavaScript está dentro desta janela.
+
+			2- 
+				2.1 - Location : URL, página atual, página anterior.
+				2.2- Document : frequentemente usado;
+				2.3- History: Armazena a navegação e facilta ela dentro do próprio site;
+					|
+					|
+					|
+
+			3- HTML: 	Suas tags e seus aninhamentos;
+
+		- Todos são elementos.	
+
+		- Técnicas para acessar os elementos:
+
+			- Por marca:  window.document.getElementsByTagName(<nome-da-tag>)
+		
+				- Seleciona os elementos da HTML por meio do nome da ta;
+
+			- Por Id: window.document.getElementsById (<nome-da-tag>)
+
+				- Seleciona os elementos da HTML por meio da Id  da tags dos elementos;
+
+			- Por Nome: window.documento.getElementsByName(<nome-da-tag>)
+	
+				- Seleciona os elementos da HTML por meio do 'nome= " " ';
+			
+			- Por Class: window.documento.getElementsByClassName(<nome-da-tag>)
+
+ 				-  Seleciona os elementos da HTML por meio do Nome das Classes;
+
+			- Por Seletor: window.documento.querySeletor('div#<nome-div>')
+
+		- Exibindo (serve para todos):
+
+			- window.document.write(<variável>.innerText) -> você pode usar para modificar o conteudo do HTML
+
+
+	- AULA 02: EVENTOS DOM
+
+		- DOM: É um facilitador, que existe dentro do HTML5 para dar acesso aos elementos para o JavaScript.
+
+		- Evento DOM: é tudo aquilo que pode acontecer com os elementos da HTML.
+
+		 - Site com uma lista de eventos possíveis para se fazer com o DOM: https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+		 - <nome_var>.addEventListener('ação', nome_da_função) : declara que um evento vai ocorrer quando a seguinte função for declarada.
+
+		- Armazenando valor numerico em uma var: Number(<nome-da-var>. value)
+
+
+-> MÓDULO D: CONDICIONAIS
+
+	- AULA 01: ESTRUTURAS CONDICIONAIS (PARTE 01) : SIMPLES E COMPOSTA
+
+		- SIMPLES:
+
+			- if (<condição>){
+
+				<true>
+
+			}
+
+
+		- COMPOSTA:
+
+			- if (<condição>){
+
+				<false>
+
+			} 
+
+	- AULA 02: ESTRUTURAS CONDICIONAIS (PARTE 02) : ANINHADAS E MÚLTIPLAS
+
+
+		- CONDIÇÕES ANINHADAS:
+	
+			- if (<condição 01>) {
+
+				<bloco 01>
+			
+			}else{
+				
+				if (<condição 02>) {
+
+					<bloco 02>
+
+				}else{
+
+					<bloco 03>
+
+				}	
+			
+			}
+
+	
+		- CONDIÇÕES MÚLTIPLAS:
+
+			- Switch (<variável>){
+
+				case 01: <bloco de  comandos 01>
+				break
+
+				case 02: <bloco de  comandos 02>
+				break
+
+				case 03: <bloco de  comandos 03>
+				break
+
+					:
+					:
+				default: <bloco de comandos padrão>
+				break
+	
+			}
+
+	
+		- new Date(): Função em JS que serve para saber a hora, mes, ano, segundos e etc.
+		- <nome.var>.get<valor-encontrar>: serve para acessar o valor da função new Date().
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				
